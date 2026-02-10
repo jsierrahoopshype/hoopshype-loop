@@ -1,0 +1,56 @@
+{
+  "server": {
+    "host": "127.0.0.1",
+    "port": 5555
+  },
+
+  "rotation": {
+    "view_duration_ms": 12000,
+    "ranking_duration_ms": 18000,
+    "game_priority": "closest_score"
+  },
+
+  "nba_api": {
+    "refresh_interval_sec": 15,
+    "cache_ttl_sec": 30
+  },
+
+  "google_sheets": {
+    "refresh_interval_sec": 300,
+    "sheets": [
+      {
+        "id": "PASTE_SHEET_ID_HERE",
+        "gid": "0",
+        "label": "HoopsHype Rankings",
+        "title": "Power Rankings — Week 15",
+        "columns": {
+          "rank": "A",
+          "abbr": "B",
+          "name": "C",
+          "value": "D",
+          "change": "E"
+        }
+      }
+    ]
+  },
+
+  "hoopshype_ticker": {
+    "url": "https://hoopshype.com/rumors/",
+    "refresh_interval_sec": 180,
+    "max_headlines": 20,
+    "scroll_speed_px_per_sec": 55
+  },
+
+  "bluesky": {
+    "refresh_interval_sec": 60,
+    "max_posts": 8,
+    "accounts": [
+      "PASTE_ACCOUNTS_HERE"
+    ]
+  },
+
+  "theme": {
+    "accent_primary": "#00c8ff",
+    "accent_secondary": "#ff6b35"
+  }
+}
